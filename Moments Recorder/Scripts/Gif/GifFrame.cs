@@ -30,5 +30,16 @@ namespace Moments.Encoder
 		public int Width;
 		public int Height;
 		public Color32[] Data;
+
+		public static GifFrame ToGifFrame(RenderTexture source, Texture2D target)
+		{
+			RenderTexture.active = source;
+			target.ReadPixels(new Rect(0, 0, source.width, source.height), 0, 0);
+			target.Apply();
+			RenderTexture.active = null;
+
+			return new GifFrame() { Width = target.width, Height = target.height, Data = target.GetPixels32() };
+		}
+
 	}
 }
