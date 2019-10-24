@@ -36,13 +36,24 @@ namespace Moments
 
 		Thread m_Thread;
 		int m_Id;
+		bool isWorking = false;
 
 		internal List<GifFrame> m_Frames;
 		internal GifEncoder m_Encoder;
-		internal string m_FilePath;
-		internal Action<int, string> m_OnFileSaved;
-		internal Action<int, float> m_OnFileSaveProgress;
+		internal Action<int, float> m_OnProgressHandler;
 
+		private byte[] gifBinaryImage = null;
+
+		public byte[] GifImage
+		{
+			get { return gifBinaryImage; }
+		}
+
+		public bool IsComplete
+		{
+			get { return !isWorking; }
+		}
+		
 		internal Worker(ThreadPriority priority)
 		{
 			m_Id = workerId++;
@@ -53,28 +64,27 @@ namespace Moments
 		internal void Start()
 		{
 			m_Thread.Start();
+			isWorking = true;
 		}
 
 		void Run()
 		{
-			m_Encoder.Start(m_FilePath);
+			m_Encoder.Start( ( bytes ) => {  gifBinaryImage = new byte[bytes.Length]; bytes.CopyTo(gifBinaryImage,0); } );
 
 			for (int i = 0; i < m_Frames.Count; i++)
 			{
 				GifFrame frame = m_Frames[i];
 				m_Encoder.AddFrame(frame);
 
-				if (m_OnFileSaveProgress != null)
+				if (m_OnProgressHandler != null)
 				{
 					float percent = (float)i / (float)m_Frames.Count;
-					m_OnFileSaveProgress(m_Id, percent);
+					m_OnProgressHandler(m_Id, percent);
 				}
 			}
 
-			m_Encoder.Finish();
-
-			if (m_OnFileSaved != null)
-				m_OnFileSaved(m_Id, m_FilePath);
+			m_Encoder.Finish();					
+			isWorking = false;
 		}
 	}
 }
