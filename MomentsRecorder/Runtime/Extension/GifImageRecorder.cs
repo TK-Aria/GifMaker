@@ -1,4 +1,5 @@
-﻿using System;
+// Author : tkaria
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,11 +33,11 @@ namespace Moments
         [SerializeField, Moments.Min(-1)] int m_Repeat = 0;
         [SerializeField, Range(1, 100)] int m_Quality = 15;
         [SerializeField, Moments.Min(0.1f)] float m_BufferSize = 3f;
+        
         private int m_MaxFrameCount;
         private float m_Time;
         private float m_TimePerFrame;
-        List<GifFrame> captureList = new List<GifFrame>();
-
+        private List<GifFrame> captureList = new List<GifFrame>();
         public ThreadPriority WorkerPriority = ThreadPriority.BelowNormal;
 
         #endregion // Field End.
