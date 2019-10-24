@@ -23,16 +23,15 @@
 
 using UnityEngine;
 using UnityEditor;
-using Moments;
 
 namespace MomentsEditor
 {
-	[CustomPropertyDrawer(typeof(MinAttribute))]
-	internal sealed class MinDrawer : PropertyDrawer
+	[CustomPropertyDrawer(typeof(Moments.MinAttribute))]
+	internal sealed class MinAttributeDrawer : PropertyDrawer
 	{
 		public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
 		{
-			MinAttribute attribute = (MinAttribute)base.attribute;
+			Moments.MinAttribute attribute = (Moments.MinAttribute)base.attribute;
 
 			if (property.propertyType == SerializedPropertyType.Integer)
 			{

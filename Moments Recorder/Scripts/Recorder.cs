@@ -23,6 +23,7 @@
 
 using UnityEngine;
 using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using Moments.Encoder;
@@ -416,11 +417,17 @@ namespace Moments
 			{
 				m_Encoder = encoder,
 				m_Frames = frames,
-				m_FilePath = filepath,
-				m_OnFileSaved = OnFileSaved,
-				m_OnFileSaveProgress = OnFileSaveProgress
+				//m_FilePath = filepath,
+				//m_OnFileSaved = OnFileSaved,
+				m_OnProgressHandler = OnFileSaveProgress
 			};
 			worker.Start();
+
+			yield return new WaitUntil(() => { return worker.IsComplete; } );
+			
+			// store file storage.
+			var fileStream = new System.IO.FileStream(filepath, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None);
+			fileStream.Write(worker.GifImage, 0, worker.GifImage.Length); 
 		}
 
 		// Converts a RenderTexture to a GifFrame
