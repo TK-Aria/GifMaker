@@ -23,9 +23,9 @@
 
 using UnityEngine;
 using UnityEditor;
-using Moments;
+using AriaPlugin.Runtime.GifMaker;
 
-namespace MomentsEditor
+namespace AriaPlugin.Runtime.GifMakerEditor
 {
 	[CustomEditor(typeof(Recorder))]
 	public sealed class RecorderEditor : Editor

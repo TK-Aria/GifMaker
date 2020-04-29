@@ -23,7 +23,7 @@
 
 using UnityEngine;
 
-namespace Moments
+namespace AriaPlugin.Runtime.GifMaker
 {
 	public sealed class MinAttribute : PropertyAttribute
 	{

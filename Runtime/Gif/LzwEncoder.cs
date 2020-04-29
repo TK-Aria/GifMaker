@@ -16,7 +16,7 @@
 using System;
 using System.IO;
 
-namespace Moments.Encoder
+namespace AriaPlugin.Runtime.GifMaker.Encoder
 {
 	public class LzwEncoder
 	{

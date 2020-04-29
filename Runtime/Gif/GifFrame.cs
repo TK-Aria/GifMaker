@@ -23,7 +23,7 @@
 
 using UnityEngine;
 
-namespace Moments.Encoder
+namespace AriaPlugin.Runtime.GifMaker.Encoder
 {
 	public class GifFrame
 	{

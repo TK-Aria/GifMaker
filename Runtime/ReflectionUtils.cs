@@ -26,7 +26,7 @@ using System;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Moments
+namespace AriaPlugin.Runtime.GifMaker
 {
 	public class ReflectionUtils<T> where T : class, new()
 	{

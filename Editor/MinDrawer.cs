@@ -24,14 +24,14 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace MomentsEditor
+namespace AriaPlugin.Runtime.GifMakerEditor
 {
-	[CustomPropertyDrawer(typeof(Moments.MinAttribute))]
+	[CustomPropertyDrawer(typeof(AriaPlugin.Runtime.GifMaker.MinAttribute))]
 	internal sealed class MinAttributeDrawer : PropertyDrawer
 	{
 		public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
 		{
-			Moments.MinAttribute attribute = (Moments.MinAttribute)base.attribute;
+			AriaPlugin.Runtime.GifMaker.MinAttribute attribute = (AriaPlugin.Runtime.GifMaker.MinAttribute)base.attribute;
 
 			if (property.propertyType == SerializedPropertyType.Integer)
 			{

@@ -1,0 +1,17 @@
+{
+    "name": "GifMaker.Editor",
+    "references": [
+        "GUID:cae447acdd9944ae88d2fa1e07b78779"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

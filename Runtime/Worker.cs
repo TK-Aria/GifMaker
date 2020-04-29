@@ -25,10 +25,10 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using Moments.Encoder;
+using AriaPlugin.Runtime.GifMaker.Encoder;
 using ThreadPriority = System.Threading.ThreadPriority;
 
-namespace Moments
+namespace AriaPlugin.Runtime.GifMaker
 {
 	internal sealed class Worker
 	{

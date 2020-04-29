@@ -19,7 +19,7 @@
 
 using System;
 
-namespace Moments.Encoder
+namespace AriaPlugin.Runtime.GifMaker.Encoder
 {
 	public class NeuQuant
 	{

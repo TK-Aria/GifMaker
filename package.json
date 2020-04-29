@@ -1,0 +1,22 @@
+{
+    "name": "com.aria.unity.gifmaker",
+    "version": "1.0.0",
+    "unity": "2019.1",
+    "displayName": "Gif Maker",
+    "description": "Gif",
+    "category": "Gif",
+    "keywords": [ "Gif" ],
+    "dependencies": {
+    },
+    "samples": [
+        {
+            "displayName": "Example",
+            "description": "how to use.",
+            "path": "Samples~/Example"
+        }
+    ],
+    "author": {
+      "name": "tkaria",
+      "url": "https://tk3118.hatenablog.com"
+    }
+}

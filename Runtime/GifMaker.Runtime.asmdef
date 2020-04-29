@@ -1,7 +1,7 @@
 {
-    "name": "GifRecorder.Editor",
+    "name": "GifMaker.Runtime",
     "references": [
-        "GUID:cae447acdd9944ae88d2fa1e07b78779"
+        "GUID:750f25552c9074f9db1d0b517005be7c"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [],

@@ -26,10 +26,10 @@ using System;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
-using Moments.Encoder;
+using AriaPlugin.Runtime.GifMaker.Encoder;
 using ThreadPriority = System.Threading.ThreadPriority;
 
-namespace Moments
+namespace AriaPlugin.Runtime.GifMaker
 {
 	using UnityObject = UnityEngine.Object;
 
@@ -40,7 +40,7 @@ namespace Moments
 		PreProcessing
 	}
 
-	[AddComponentMenu("Miscellaneous/Moments Recorder")]
+	[AddComponentMenu("Miscellaneous/AriaPlugin.Runtime.GifMaker Recorder")]
 	[RequireComponent(typeof(Camera)), DisallowMultipleComponent]
 	public sealed class Recorder : MonoBehaviour
 	{
