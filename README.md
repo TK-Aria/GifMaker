@@ -49,6 +49,7 @@ Tested with Unity 4.6. The demo requires Unity 5+ (Personal or Pro).
 
 <!-- | Platform | <img src="docu/Icons/windows.svg" height="20" />Windows | <img src="docu/Icons/macos.svg" height="20" />MacOS | <img src="docu/Icons/linux.svg" height="20" />Linux | <img src="docu/Icons/android.svg" height="20" /> Android | <img src="docu/Icons/ios.svg" height="20" />iOS |  <img src="docu/Icons/android.svg" height="20" />HTML5 | -->
 
+<!--
 | Platform | Test | CI | D3D11 | Vulkan | OpenGL | OpenGLES 3 | Metal |
 |----------|:--:|:-----:|:-----:|:------:|:------:|:----------:|:-----:|
 | Windows | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -57,14 +58,17 @@ Tested with Unity 4.6. The demo requires Unity 5+ (Personal or Pro).
 | iOS | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Android | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | HTML5 | N/A| N/A | N/A | N/A | N/A | N/A | N/A |
+-->
 
 | Platform | Windows | MacOS | Linux | Android | iOS | HTML5 |
 |----------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 | Test | N/A | N/A | N/A | N/A | N/A | N/A |
 | CI | N/A| N/A | N/A | N/A | N/A | N/A |
 
+<!--
 | Test | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) |
 | CI | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) |
+-->
 
 ## ■ Install
 
