@@ -22,20 +22,20 @@ support `gif` for unity.
 
 ## ■ Documentation
 
-* [Home](#Gif-Maker)
-* [Documentation](#■-Documentation)
-* [Introduction](#■-Introduction)
-* [Build Status](#■-Build-Status)
-* [Install](#■-Directory-Structure)
-  * [from NuGet]()
-  * [from Unity Package Manager]()
+* [Home](#gif-maker)
+* [Documentation](#-documentation)
+* [Introduction](#-introduction)
+* [Build Status](#-build-status)
+* [Install](#-directory-structure)
+  * [from NuGet](#from-nuget)
+  * [from Unity Package Manager](#from-unity-package-manager)
   <!--* [from unity package]()-->
 * [Wiki]()
   * [ScriptReference]()
-* [Dependencies](#■-Dependencies)
-* [Directory Structure](#■-Directory-Structure)
-* [License](#■-License)
-* [Reference](#■-Reference)
+* [Dependencies](#-dependencies)
+* [Directory Structure](#-directory-structure)
+* [License](#-license)
+* [Reference](#-reference)
 
 ## ■ Introduction
 
