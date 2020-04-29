@@ -1,8 +1,6 @@
 {
     "name": "GifMaker.Runtime",
-    "references": [
-        "GUID:750f25552c9074f9db1d0b517005be7c"
-    ],
+    "references": [],
     "optionalUnityReferences": [],
     "includePlatforms": [],
     "excludePlatforms": [],

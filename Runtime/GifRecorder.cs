@@ -38,10 +38,8 @@ namespace AriaPlugin.Runtime.GifMaker
 
 		#region Property
 
-		//[SerializeField] private RecorderState state;
-		//public RecorderState State { get {return state;} private set { state = value;} }
-
-		[field: SerializeField, RenameField] public RecorderState State { get; private set; }
+		[SerializeField] private RecorderState state;
+		public RecorderState State { get {return state;} private set { state = value;} }
 
 		#endregion // Property End.
 
