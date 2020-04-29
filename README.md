@@ -82,7 +82,7 @@ Tested with Unity 4.6. The demo requires Unity 5+ (Personal or Pro).
 
 ```
 {
-	"com.aria.unity.gifmaker": "https://github.com/TK-Aria/GifMaker.git#master" 
+    "com.aria.unity.gifmaker": "https://github.com/TK-Aria/GifMaker.git#master" 
 }
 ```
 
@@ -97,10 +97,6 @@ Tested with Unity 4.6. The demo requires Unity 5+ (Personal or Pro).
 - [ScriptReference](#)
 
 ## ■ Dependencies
-
-- [Aria Runtime Utility](#)
-- [Aria Network SDK](#)
-- [GifMaker](#)
 
 The documentation is generated with Doxygen if CMake can find that tool.
 
