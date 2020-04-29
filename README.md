@@ -1,23 +1,94 @@
-# GifMaker
+# Gif Maker
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
+[![NuGet](https://img.shields.io/badge/nuget-v1.0.0-blue)](#)
 
-MIT Lisence
+support `gif` for unity.
 
-# Moments
+<!-- Badges: https://shields.io/ -->
+<!-- Reference -->
+<!-- https://kakakakakku.hatenablog.com/entry/2018/08/08/200903 -->
 
-**Moments** is a quick GIF replay recorder for Unity3D. It automatically records the last few seconds of gameplay and lets you save to a GIF file on demand, like the game [TowerFall Ascension](http://www.towerfall-game.com/) does.
+<!-- Code Quality: https://app.codacy.com/ -->
+<!-- https://srz-zumix.blogspot.com/2018/07/cireview-codacy.html-->
+
+<!-- OTHER LICENSE -->
+<!-- BSD [![License](https://img.shields.io/badge/license-BSD--3%20clause-blue.svg)](LICENSE) -->
+<!-- Apache2 [![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](LICENSE) -->
+<!-- GPL [![License](https://img.shields.io/badge/license-GPL-blue.svg)](LICENSE) -->
+
+<!-- [![Coverity Scan](https://scan.coverity.com/projects/4884/badge.svg)](https://scan.coverity.com/projects/glfw-glfw) -->
+<!-- [![chat](https://badges.gitter.im/LLGL-Project/LLGL.svg)]() -->
+
+## ■ Documentation
+
+* [Home](#Gif-Maker)
+* [Documentation](#■-Documentation)
+* [Introduction](#■-Introduction)
+* [Build Status](#■-Build-Status)
+* [Install](#■-Directory-Structure)
+  * [from NuGet]()
+  * [from Unity Package Manager]()
+  <!--* [from unity package]()-->
+* [Wiki]()
+  * [ScriptReference]()
+* [Dependencies](#■-Dependencies)
+* [Directory Structure](#■-Directory-Structure)
+* [License](#■-License)
+* [Reference](#■-Reference)
+
+## ■ Introduction
+
+**Gif Maker** is a quick GIF replay recorder for Unity3D. It automatically records the last few seconds of gameplay and lets you save to a GIF file on demand, like the game [TowerFall Ascension](http://www.towerfall-game.com/) does.
 
 Tested with Unity 4.6. The demo requires Unity 5+ (Personal or Pro).
 
-## Instructions
+## ■ Build Status
 
-Drop the `Moments Recorder` folder in your project and add the `Recorder` script to your camera (or select your camera and use `Component -> Miscellaneous -> Moments Recorder`).
+<!-- | Platform | <img src="docu/Icons/windows.svg" height="20" />Windows | <img src="docu/Icons/macos.svg" height="20" />MacOS | <img src="docu/Icons/linux.svg" height="20" />Linux | <img src="docu/Icons/android.svg" height="20" /> Android | <img src="docu/Icons/ios.svg" height="20" />iOS |  <img src="docu/Icons/android.svg" height="20" />HTML5 | -->
 
-The included demo should get you started. For more advanced features, browse the `Moments.Recorder` source code, it's heavily commented.
+| Platform | Windows | MacOS | Linux | Android | iOS | HTML5 |
+|----------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| Test | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) |
+| CI | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) |
 
-[Here's a preview](http://i.imgur.com/K4R8UZ0.gifv) of the output quality.
+## ■ Install
 
-Pull requests are welcomed !
+### from NuGet
 
-## License
+- nuget package manager.
 
-Zlib (see [License.txt](LICENSE.txt))
+### from Unity Package Manager
+
+- `manifest.json`
+
+```
+{
+	"com.aria.unity.gifmaker": "https://github.com/TK-Aria/GifMaker.git#master" 
+}
+```
+
+<!--## from unity package
+
+- [download this here Releases](https://github.com/TK-Aria/Unity-IronPython/releases)
+
+ <img src="https://pngimage.net/wp-content/uploads/2018/06/unity-logo-white-png-5.png" height="20" /> drag and drop or double click on unity package file.-->
+
+## Wiki
+
+- [ScriptReference](#)
+
+## ■ Dependencies
+
+- [Aria Runtime Utility](#)
+- [Aria Network SDK](#)
+- [GifMaker](#)
+
+The documentation is generated with Doxygen if CMake can find that tool.
+
+## ■ License
+- [MIT License](./LICENSE)
+
+## ■ Reference
+
+- [original](https://github.com/Chman/Moments)
