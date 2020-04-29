@@ -59,7 +59,10 @@ Tested with Unity 4.6. The demo requires Unity 5+ (Personal or Pro).
 | HTML5 | N/A| N/A | N/A | N/A | N/A | N/A | N/A |
 
 | Platform | Windows | MacOS | Linux | Android | iOS | HTML5 |
-|----------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|----------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| Test | N/A | N/A | N/A | N/A | N/A | N/A |
+| CI | N/A| N/A | N/A | N/A | N/A | N/A |
+
 | Test | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) |
 | CI | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) | [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) |
 
