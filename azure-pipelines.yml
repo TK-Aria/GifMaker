@@ -1,0 +1,88 @@
+# azure-pipelines.yml
+
+trigger:
+- master
+
+jobs:
+
+  # NuGet
+  # help: 
+  #    (https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget?view=azure-devops)
+  #    (https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/nuget?view=azure-devops&tabs=yaml)
+  #    (https://blog.shibayan.jp/entry/20190808/1565267180)
+  - job: nuget_pack
+    displayName: NuGet Packaging
+    pool:
+      vmImage: 'windows-latest'
+    steps:
+    - checkout: self
+      fetchDepth: 1
+      submodules: recursive
+      
+    - task: NuGetToolInstaller@1
+      displayName: 'Install NuGet CLI 5.0.x'
+      inputs:
+        versionSpec: '5.0.x'
+        checkLatest: true
+
+    - task: NuGetCommand@2
+      inputs:
+        command: 'pack'
+        packagesToPack: './**/*.nuspec'
+        packDestination: '$(Build.ArtifactStagingDirectory)/dist'
+
+    - task: NuGetCommand@2
+      displayName: 'Publish NuGet Package'
+      inputs:
+        command: push
+        publishVstsFeed: 'abc61874-354f-417d-aaad-eafdce57c898/aec9a088-341d-4188-bbd3-304350161103'
+        allowPackageConflicts: true
+        packagesToPush: '$(Build.ArtifactStagingDirectory)/dist/*.nupkg'
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'postprocess: Archive Artifact'
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)/dist'
+        ArtifactName: 'Artifact Test'
+        publishLocation: 'Container'
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'postprocess: Archive Project'
+      inputs:
+        PathtoPublish: '$(Build.SourcesDirectory)'
+        ArtifactName: 'Project'
+        publishLocation: 'Container'
+
+        
+  # Doxygen (OSX)
+  - job: doxygen_build
+    displayName: Doxygen Build
+    pool:
+      vmImage: 'macos-latest'
+    steps:
+    - checkout: self
+      fetchDepth: 1
+      submodules: recursive
+
+    # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    - task: CmdLine@2
+      displayName: Brew Install
+      inputs:
+        script: |
+          /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+    - task: CmdLine@2
+      displayName: Doxygen
+      inputs:
+        script: |
+          brew install doxygen
+          brew install graphviz@2.42.2
+          cd Editor/Documents/ && doxygen
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'postprocess: Archive Documents'
+      inputs:
+        PathtoPublish: '$(Build.SourcesDirectory)/Editor/Documents/ScriptReferece'
+        ArtifactName: 'ScriptReference'
+        publishLocation: 'Container'
+

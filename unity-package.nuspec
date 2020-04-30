@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>GifMaker</id>
+    <version>1.0.1</version>
+    <description>A description of what this package is and does.</description>
+    <authors>tkaria</authors>
+    <title>Gif Maker</title>
+    <owners>tkaria</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/TK-Aria/GifMaker.git</projectUrl>
+    <iconUrl>https://www.nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <releaseNotes>Notes for this specific release</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>Unity</tags>
+  </metadata>
+</package>
